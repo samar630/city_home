@@ -1,9 +1,13 @@
 import React from'react'
  
 const Footer=() =>{
-    return(<div>
-        Hero
-        </div>)
+    return(
+
+       <div id='#'>
+        f
+
+       </div>
+    )
 }
 
 export default  Footer

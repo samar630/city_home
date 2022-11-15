@@ -89,7 +89,7 @@ export default function Header() {
                 <img src="Ksa.png" alt="flag" height="28" />
               </a>
               <ul class="dropdown-menu">
-                <li>
+                <li >
                   <a class="dropdown-item" href="#">
                     <img src="Ksa.png" alt="flag" height="28" />
                   </a>
@@ -100,10 +100,17 @@ export default function Header() {
                   </a>
                 </li>
               </ul>
-            </li>
+              </li>
+              <li>
+              <div class='callUs'>
+      <a href="#" class="btn yellow"><img src="call.png" alt="call" height='28'/></a>
+      </div>
+              </li>
           </ul>
+       
         </div>
-      </div>{" "}
+      </div>
+
     </Fragment>
   )
 }
