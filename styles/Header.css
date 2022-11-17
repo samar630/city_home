@@ -234,8 +234,112 @@
   .hamburger {
     display: block;
     display: flex;
+    
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    align-items: center;
+    padding: 0px;
   }
-  .content-max {
-    display: flex;
-  }
+  .logo-section{
+    width: 30rem;
+    left: -5rem;
+    right: initial;
+
+ }
+ .section-flag{
+  display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    float: right;
+    z-index: 1;
+ }
+ .list-nav{
+  display: flex;
+ }
+ .logo-screen-mobile {
+  display: flex;
+  -webkit-box-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  justify-content: space-between;
+  padding: 3rem 2.5rem;
 }
+ .logo-screen-mobile img{
+  width: 15rem
+ }
+ .nav-list-mobile ul{
+  display: block;
+  list-style-type: disc;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  padding-inline-start: 40px;
+ }
+ .nav-list-mobile ul li{
+  position: relative;
+    display: block;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    line-height: 2.4rem;
+    padding: 1rem 2.5rem;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: rgb(49, 38, 32);
+    text-transform: capitalize;
+    transition: all 500ms ease 0s;
+ }
+ .nav-list-mobile a{
+  font-size: 1.5rem;
+    font-weight: bold;
+    color: rgb(49, 38, 32);
+    text-transform: capitalize;
+    width: 100%;
+    text-decoration: none;
+}
+.side-bar-mobile {
+  display: flex;
+  flex-direction: column;
+  -webkit-box-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  justify-content: center;
+  padding: 1rem;
+  background-color: var(--color-primary);
+  color: var(--color-secondary);
+  margin-top: 3rem;
+    height: 7.5rem;
+  
+}
+.side-bar-mobile img {
+  width: 3rem;
+}
+.login-section-mobile a {
+  color: inherit;
+  text-decoration: none!important;
+  line-height: 3.4rem;
+  font-size: 1.5rem;
+  font-weight: 400;
+  transition: all .2s;
+}
+.social-icons {
+  display: flex;
+  -webkit-box-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  justify-content: center;
+  padding: 3rem 2.5rem;
+  margin-top: 6rem;
+}
+
+.social-icons a{
+  color: inherit;
+  text-decoration: none!important;
+  line-height: 3.4rem;
+  font-size: 1.7rem;
+  font-weight: 400;
+  transition: all .2s;
+  margin: 8px;
+}
+ }
+

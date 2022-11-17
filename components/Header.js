@@ -1,5 +1,7 @@
 import { React, useState } from "react"
-import { AiOutlineMenu, AiOutlineClose } from "react-icons/ai"
+import { AiOutlineMenu, AiOutlineClose} from "react-icons/ai"
+import {AiFillFacebook,AiFillTwitterCircle,AiFillYoutube,AiFillLinkedin } from 'react-icons/ai'
+import {BsInstagram} from 'react-icons/bs'
 const Header = () => {
   const [nav, setNav] = useState(false)
   return (
@@ -114,37 +116,55 @@ const Header = () => {
         </div>
       </div>
       <div className="hamburger">
-        <div class="list-flag-callUs">
-          <div class=".logo-section">
-            <div class="absolute   left-7 top-26  w-30.">
+            <div class=".logo-section bg-yellow-500 left-0  top-10  w-30.">
               <a>
                 <img src="header-logo.png" alt="image" class="mt-4" />
               </a>
             </div>
-          </div>
-          <div class="content">
-            <a href="#">
-              <img src="Ksa.png" alt="flag" class="h-200" />
-            </a>
-            <div class="callUs">
+         
+        <div class='section-flag  mt-4'>
+          <ul>
+          <li class="nav-item dropdown">
+                  <a
+                    class="nav-link dropdown-toggle"
+                    href="#"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                  >
+                    <img src="Ksa.png" alt="flag" class="w-28 h-18 " />
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li>
+                      <a class="dropdown-item" href="#">
+                        <img src="Ksa.png" alt="flag" class="w-28 h-18" />
+                      </a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#">
+                        <img src="usa.png" alt="flag" class="w-28 h-18 " />
+                      </a>
+                    </li>
+                  </ul>
+                </li>
+          </ul>
+          <div class="callUs">
               <a href="#" class="btn yellow">
-                <img src="call.png" alt="call" />
+                <img src="call.png" alt="call" height="20" />
               </a>
             </div>
-          </div>
         </div>
         <div className=" max-w-[1640px] mx-auto flex justify-between items-center p-4">
           {/* Right side */}
           <div className="flex items-center">
             <div onClick={() => setNav(!nav)} className="cursor-pointer">
-              <AiOutlineMenu size={30} />
+              <AiOutlineMenu size={30}  />
             </div>
           </div>
 
           {/* Mobile Menu */}
           {/* Overlay */}
           {nav ? (
-            <div className="bg-black/80 fixed w-full h-screen z-10 top-0 right-0"></div>
+            <div className="bg-white/80 fixed w-full h-screen z-10 top-0 right-0"></div>
           ) : (
             ""
           )}
@@ -159,15 +179,15 @@ const Header = () => {
           >
             <AiOutlineClose
               onClick={() => setNav(!nav)}
-              size={30}
-              className="absolute right-4 top-4 cursor-pointer"
+              size={20}
+              className="absolute bg-white left-0 top-0 cursor-pointer"
             />
 
             <nav>
               <div class="nav-rightSide-mobile ">
                 <div class="nav-list-mobile">
                   <div class="logo-screen-mobile">
-                    <img src="header-logo.png" alt="logo" height="28" />
+                    <img src="header-logo.png" alt="logo"  />
                   </div>
                   <ul>
                     <li class="false">
@@ -191,6 +211,38 @@ const Header = () => {
                       <a href="/Projects">About Us</a>
                     </li>
                   </ul>
+                </div>
+                <div class='side-bar-mobile'>
+                  <div>
+                    <img className="person" src="user.png" alt="no photo" />
+                  </div>
+                  <div class="login-section-mobile mt-2">
+        
+              <a href="#" class="mr-2">
+                Login{" "}
+              </a>
+              <span class="mr-2"> / </span>
+              <a href="#" class="mr-2">
+                Register
+              </a>
+            </div>
+                </div>
+                <div class='social-icons'>
+               <a href="#">
+               <AiFillLinkedin size={27}/>
+               </a>
+               <a href="#">
+                <AiFillFacebook size={27}/>
+                </a>
+                <a href="#">
+                <AiFillTwitterCircle size={27}/>
+                </a>
+                <a href="#">
+                <BsInstagram size={27}/>
+                </a>
+                <a href="#">
+                <AiFillYoutube size={27}/>
+                </a>
                 </div>
               </div>
             </nav>
