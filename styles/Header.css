@@ -15,78 +15,95 @@
   width: 100% !important;
   float: right;
   top: -1;
+  height: 6vh;
+  display: flex;
 }
-.container-fluid a {
+.topbar-email {
+  display: flex;
+  justify-content: space-between;
+}
+.topbar-email a {
+  color: aliceblue;
+  font-size: 15px;
+  display: flex;
+  direction: none;
+  text-decoration: none;
+}
+.login-section {
+  display: flex;
+}
+.login-section a {
+  color: aliceblue;
+  font-size: 15px;
+  flex-direction: row-reverse;
+  direction: none;
+  text-decoration: none;
+}
+.login-section span {
   color: aliceblue;
   font-size: 15px;
   flex-direction: row-reverse;
 }
-.navbar-nav a {
-  color: aliceblue;
-  font-size: 15px;
-}
-.photo {
-  background-color: var(--color-secondary);
-  margin: 0%;
 
-  margin-top: -1%;
-  display: flex;
-  width: 25%;
-  height: 100%;
+.absolute {
+  right: initial;
+  height: 12rem;
+  margin-top: -6px;
+  background-color: var(--color-secondary);
+  float: left;
 }
-.logo-section {
-  height: 100%;
+.nav-rightSide {
+  display: flex;
+  -webkit-box-align: center;
+  align-items: center;
 }
 .nav-list {
   padding: 0;
   margin: 0;
-  width: 75%;
-  height: 100%;
 }
 .nav-list ul {
   text-align: right;
   list-style: none;
-  margin-top: -4rem;
 }
 .nav-list ul li {
   display: inline-block;
   position: relative;
   margin-right: 0.5rem;
-  font-size: 2rem;
-  cursor: pointer;
-  margin-top: 0px;
-  justify-content: space-between;
 }
 .nav-list a {
-  text-decoration: none;
-  color: #000;
+  transition: all 0.5s ease 0s;
+  position: relative;
+  color: rgb(12, 12, 12);
+  font-size: 1.7rem;
+  font-weight: 500;
+  display: flex;
+  -webkit-box-align: center;
+  align-items: center;
+  padding: 2.7rem 1.9rem;
 }
-.nav-item{
+.nav-item {
   position: relative;
   display: inline-block;
- 
 }
-.dropdown-menu{
+.dropdown-menu {
   color: black;
   padding: 12px 16px;
   text-decoration: none;
-  display: block; 
+  display: block;
 }
-/* .nav-item:focus .dropdown-menu */
-/* .nav-item:focus-within .dropdown-menu */
-.nav-item:hover .dropdown-menu{
+
+.nav-item:hover .dropdown-menu {
   display: block;
   z-index: 1;
   transform: translateY(0);
-  transition-delay: 0s,0s,0s,0.3s;
-
+  transition-delay: 0s, 0s, 0s, 0.3s;
 }
 
-.dropdown:hover .dropdown_menu--animated{
-    display: block
-  }
+.dropdown:hover .dropdown_menu--animated {
+  display: block;
+}
 
-.dropdown-menu li{
+.dropdown-menu li {
   text-align: center;
   margin: 0%;
   transform-origin: 50% 0%;
@@ -94,52 +111,131 @@
   box-shadow: 0 2px rgba(0, 0, 0, 0.05);
   line-height: 40px;
 }
-  .dropdown-menu:hover li{
-    transform: perspective(350px) rotateX(0deg);
-    transition: 0.5s linear 0s;
-    background-color: #fff;
-  }
+.dropdown-menu:hover li {
+  transform: perspective(350px) rotateX(0deg);
+  transition: 0.5s linear 0s;
+  background-color: #fff;
+}
 
-  .btn{
-    position: relative;
-    font-weight: bold;
-    font-size: 35px;
-    display: inline-block;
-    width: 55px;
-    height: 55px;
-    border-radius: 50%;
-    cursor: pointer;
-    margin: 0 px 15px;
+.btn {
+  position: relative;
+  font-weight: bold;
+  font-size: 35px;
+  display: inline-block;
+  width: 55px;
+  height: 55px;
+  border-radius: 50%;
+  cursor: pointer;
+  margin: 0 px 15px;
+}
+.callUs {
+  padding: 2px;
+  text-align: center;
+  margin-left: 2rem;
+  position: relative;
+}
+.btn::before {
+  position: absolute;
+  content: "";
+  width: 60px;
+  height: 60px;
+  background-color: var(--color-secondary);
+  z-index: -1;
+  border-radius: 50%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  animation: rotate 20s linear infinite;
+}
+.yellow {
+  background-color: var(--color-primary);
+}
+.yellow::before {
+  border: 3px dashed var(--color-primary);
+}
+@keyframes rotate {
+  from {
+    transform: translate(-50%, -50%) rotate(356deg);
   }
-  .callUs{
-    padding: 2px;
-    text-align: center;
-    
+  to {
+    transform: translate(-50%, -50%) rotate(-356deg);
   }
-  .btn::before{
-    position: absolute;
-    content: '';
-    width: 60px;
-    height: 60px;
-    background-color: var(--color-secondary);
-    z-index: -1;
-    border-radius: 50%;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%,-50%);
-    animation: rotate 20s linear infinite;
+}
+
+.topSection a {
+  color: aliceblue;
+  font-size: 15px;
+  display: flex;
+}
+.logo-section {
+  position: relative;
+  padding: 3.5rem 0px;
+  margin-top: -4.2rem;
+}
+
+.nav-container {
+  -webkit-box-pack: center;
+  justify-content: center;
+  box-shadow: rgb(25 25 25 / 10%) 0px 10px 15px;
+  background-color: rgb(255, 255, 255);
+  width: 100%;
+  display: flex;
+  position: relative;
+  top: 0px;
+  z-index: 1000;
+  color: rgb(12, 12, 12);
+  transition: all 0.5s ease 0s;
+}
+.content {
+  display: flex;
+  -webkit-box-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  align-items: center;
+  padding: 0px;
+}
+.nav_rightSide {
+  display: flex;
+  -webkit-box-align: center;
+  align-items: center;
+}
+.nav-list ul {
+  text-align: right;
+  list-style: none;
+}
+.nav-list > ul > li {
+  display: inline-block;
+  position: relative;
+  margin-right: 0.5rem;
+}
+.nav-list > ul > li a {
+  transition: all 0.5s ease 0s;
+  position: relative;
+  color: rgb(12, 12, 12);
+  font-size: 1.7rem;
+  font-weight: 500;
+  display: flex;
+  -webkit-box-align: center;
+  align-items: center;
+  padding: 2.7rem 1.9rem;
+  text-decoration: none;
+}
+.callUs {
+  margin-left: 2rem;
+  position: relative;
+}
+.hamburger {
+  display: none;
+}
+@media screen and (max-width: 1200px) {
+  .nav-container {
+    display: none;
   }
-  .yellow{
-    background-color: var(--color-primary);
+  .hamburger {
+    display: block;
+    display: flex;
   }
-  .yellow::before{
-    border: 3px dashed var(--color-primary);
+  .content-max {
+    display: flex;
   }
-  @keyframes rotate{
-    from{
-      transform: translate(-50%,-50%) rotate(356deg);
-    }
-    to{
-      transform: translate(-50%,-50%) rotate(-356deg);
-    }
-  }
+}
