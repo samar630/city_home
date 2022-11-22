@@ -1,5 +1,6 @@
 import "../styles/globals.css"
 import "../styles/Header.css"
+import "../styles/Hero.css"
 import "bootstrap/dist/css/bootstrap.css"
 import Head from "next/head"
 import Script from "next/script"

@@ -81,9 +81,10 @@
   align-items: center;
   padding: 2.7rem 1.9rem;
 }
-.nav-item {
+.nav-item img {
   position: relative;
   display: inline-block;
+  width: 48px;
 }
 .dropdown-menu {
   color: black;
@@ -170,7 +171,16 @@
 .logo-section {
   position: relative;
   padding: 3.5rem 0px;
-  margin-top: -4.2rem;
+}
+.absolute {
+  margin-top: -0.5rem;
+
+  width: 24rem;
+  height: 10.7rem;
+}
+.absolute img {
+  width: 85%;
+  height: 57%;
 }
 
 .nav-container {
@@ -221,43 +231,61 @@
   text-decoration: none;
 }
 .callUs {
-  margin-left: 2rem;
+  margin: 1rem;
   position: relative;
 }
 .hamburger {
   display: none;
 }
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1146px) {
   .nav-container {
     display: none;
   }
   .hamburger {
     display: block;
     display: flex;
-    
     -webkit-box-pack: justify;
     justify-content: space-between;
     -webkit-box-align: center;
     align-items: center;
     padding: 0px;
+    box-shadow: rgb(25 25 25 / 10%) 0px 10px 15px;
+    width: 100%;
   }
-  .logo-section{
-    width: 30rem;
-    left: -5rem;
-    right: initial;
 
- }
- .section-flag{
-  display: flex;
-    -webkit-box-align: center;
-    align-items: center;
-    float: right;
-    z-index: 1;
- }
- .list-nav{
-  display: flex;
- }
- .logo-screen-mobile {
+  .logo-section-mobile {
+    background-color: var(--color-secondary);
+    width: 22vh;
+    height: 9vh;
+  }
+  .class {
+    display: flex;
+  }
+  .cursor-pointer {
+    margin: 16px;
+  }
+  .mid {
+    margin-top: 2rem;
+    margin-left: 1.5rem;
+  }
+  .logo {
+    background-color: var(--color-secondary);
+
+    position: relative;
+    width: 185px;
+    height: 85px;
+    margin-top: -1rem;
+    margin-bottom: -0.5rem;
+  }
+  .logo img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: +2rem;
+    width: 75%;
+  }
+}
+.logo-screen-mobile {
   display: flex;
   -webkit-box-align: center;
   align-items: center;
@@ -265,10 +293,13 @@
   justify-content: space-between;
   padding: 3rem 2.5rem;
 }
- .logo-screen-mobile img{
-  width: 15rem
- }
- .nav-list-mobile ul{
+.logo-screen-mobile img {
+  width: 15rem;
+}
+.left-screen-1200 {
+  display: flex;
+}
+.nav-list-mobile ul {
   display: block;
   list-style-type: disc;
   margin-block-start: 1em;
@@ -276,26 +307,26 @@
   margin-inline-start: 0px;
   margin-inline-end: 0px;
   padding-inline-start: 40px;
- }
- .nav-list-mobile ul li{
+}
+.nav-list-mobile ul li {
   position: relative;
-    display: block;
-    border-top: 1px solid rgba(0, 0, 0, 0.1);
-    line-height: 2.4rem;
-    padding: 1rem 2.5rem;
-    font-size: 1.5rem;
-    font-weight: bold;
-    color: rgb(49, 38, 32);
-    text-transform: capitalize;
-    transition: all 500ms ease 0s;
- }
- .nav-list-mobile a{
+  display: block;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  line-height: 2.4rem;
+  padding: 1rem 2.5rem;
   font-size: 1.5rem;
-    font-weight: bold;
-    color: rgb(49, 38, 32);
-    text-transform: capitalize;
-    width: 100%;
-    text-decoration: none;
+  font-weight: bold;
+  color: rgb(49, 38, 32);
+  text-transform: capitalize;
+  transition: all 500ms ease 0s;
+}
+.nav-list-mobile a {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: rgb(49, 38, 32);
+  text-transform: capitalize;
+  width: 100%;
+  text-decoration: none;
 }
 .side-bar-mobile {
   display: flex;
@@ -308,19 +339,18 @@
   background-color: var(--color-primary);
   color: var(--color-secondary);
   margin-top: 3rem;
-    height: 7.5rem;
-  
+  height: 7.5rem;
 }
 .side-bar-mobile img {
   width: 3rem;
 }
 .login-section-mobile a {
   color: inherit;
-  text-decoration: none!important;
+  text-decoration: none !important;
   line-height: 3.4rem;
   font-size: 1.5rem;
   font-weight: 400;
-  transition: all .2s;
+  transition: all 0.2s;
 }
 .social-icons {
   display: flex;
@@ -332,14 +362,12 @@
   margin-top: 6rem;
 }
 
-.social-icons a{
+.social-icons a {
   color: inherit;
-  text-decoration: none!important;
+  text-decoration: none !important;
   line-height: 3.4rem;
   font-size: 1.7rem;
   font-weight: 400;
-  transition: all .2s;
+  transition: all 0.2s;
   margin: 8px;
 }
- }
-
