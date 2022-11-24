@@ -113,7 +113,7 @@ const Header = () => {
               </ul>
             </div>
             <div class="callUs">
-              <a href="#" class="btn yellow">
+              <a href="#" class="btn1  yellow">
                 <img src="call.png" alt="call" height="20" />
               </a>
             </div>
@@ -242,7 +242,7 @@ const Header = () => {
             </div>
 
             <div class="callUs">
-              <a href="#" class="btn yellow">
+              <a href="#" class="btn1 yellow">
                 <img src="call.png" alt="call" height="20" />
               </a>
             </div>

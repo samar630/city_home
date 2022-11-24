@@ -1,0 +1,17 @@
+.Box {
+  background-color: cadetblue;
+  height: 55vh;
+  width: 100%;
+}
+.container1 {
+  height: 55vh;
+  width: 100%;
+  margin-left: 20px;
+  margin-top: 120px;
+  background-color: blueviolet;
+}
+.GridContainer {
+  border: 4px;
+  margin: auto;
+  margin-left: 220px;
+}

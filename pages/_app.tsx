@@ -1,6 +1,7 @@
 import "../styles/globals.css"
 import "../styles/Header.css"
 import "../styles/Hero.css"
+import "../styles/Footer.css"
 import "bootstrap/dist/css/bootstrap.css"
 import Head from "next/head"
 import Script from "next/script"
@@ -17,6 +18,12 @@ export default function App({ Component, pageProps }: AppProps) {
           integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1"
           crossOrigin="anonymous"
         />
+        <link
+          rel="stylesheet"
+          href="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/css/bootstrap.min.css"
+          integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+          crossOrigin="anonymous"
+        ></link>
       </Head>
 
       <Script
@@ -24,6 +31,7 @@ export default function App({ Component, pageProps }: AppProps) {
         integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
         crossOrigin="anonymous"
       />
+
       <Component {...pageProps} />
     </>
   )
