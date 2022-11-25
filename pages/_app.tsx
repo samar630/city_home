@@ -7,6 +7,7 @@ import Head from "next/head"
 import Script from "next/script"
 import type { AppProps } from "next/app"
 
+
 export default function App({ Component, pageProps }: AppProps) {
   return (
     <>
@@ -24,6 +25,7 @@ export default function App({ Component, pageProps }: AppProps) {
           integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
           crossOrigin="anonymous"
         ></link>
+        <link rel="stylesheet" href="https://unpkg.com/flowbite@1.5.4/dist/flowbite.min.css" />
       </Head>
 
       <Script
@@ -31,6 +33,8 @@ export default function App({ Component, pageProps }: AppProps) {
         integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
         crossOrigin="anonymous"
       />
+      <script src="https://unpkg.com/flowbite@1.5.4/dist/flowbite.js"></script>
+      <script src="../path/to/flowbite/dist/flowbite.js"></script>
 
       <Component {...pageProps} />
     </>

@@ -1,237 +1,123 @@
 import React, { useState } from "react"
+import 'flowbite';
 
 function Hero() {
+
   return (
-    <div id="demo" class="carousel slide" data-bs-ride="carousel">
-      <div class="carousel-inner">
-        <div class="carousel-item active">
-          <div class="card bg-dark text-white ">
-            <img src="pexel1.jpg" class="card-img" alt="..." />
-          </div>
-          <div class="carousel-caption">
-            <h1 className="head">Search Your Next Home</h1>
-            <h4 className="praghraph">
-              Find new featured property located in your local city
-            </h4>
-            <div class="container">
-              <div class="row">
-                <div class="col-sm">
-                  <h5>City/Street</h5>
-                  <select name="Locations" id="cars">
-                    <option value="Istanbul">Istanbul</option>
-                    <option value="Ankara">Ankara</option>
-                    <option value="Izmir">Izmir</option>
-                    <option value="Adana">Adana</option>
-                  </select>
-                </div>
-                <div class="col-sm">
-                  <h5>Property Type</h5>
-                  <select name="Property Type" id="cars">
-                    <option value="All Categories">All Categories</option>
-                    <option value="Apartment">
-                      Apartment
-                      <select>
-                        <optgroup label="1">
-                          <option>Nested Option 1</option>
-                          <option>Nested Option 2</option>
-                        </optgroup>
-                      </select>
-                    </option>
-                    <option value="Commercial">Commercial</option>
-                    <option value="Ofices">Ofices</option>
-                    <option value="Garage">Garage</option>
-                  </select>
-                </div>
-                <div class="col-sm">
-                  <h5>Price range</h5>
-                  <select name="Price range" id="cars">
-                    <option value="From 60,000 to 20 cm">
-                      From 60,000 to 20 cm{" "}
-                    </option>
-                    <option value="From 70,000 to 30 cm">
-                      From 70,000 to 30 cm{" "}
-                    </option>
-                    <option value="From 80,000 to 40 cm ">
-                      From 80,000 to 40 cm{" "}
-                    </option>
-                    <option value="From 90,000 to 50 cm">
-                      From 90,000 to 50 cm{" "}
-                    </option>
-                    <option value="From 100,000 to 60 cm">
-                      From 100,000 to 60 cm{" "}
-                    </option>
-                  </select>
-                </div>
-                <div class="col-sm">
-                  <h5>Bedrooms</h5>
-                  <select name="Bedrooms" id="cars">
-                    <option value="1 + 1">1 + 1</option>
-                    <option value="1 + 2">1 + 2</option>
-                    <option value="1 +3">1 +3</option>
-                    <option value="1 + 4">1 + 4</option>
-                  </select>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="carousel-item">
-          <img src="pexel2.jpg" alt="Chicago" class="card-img" />
-          <div class="carousel-caption">
-            <h1 className="head">Search Your Next Home</h1>
-            <h4 className="praghraph">
-              Find new featured property located in your local city
-            </h4>
-          </div>
-          <div class="container">
-            <div class="row">
-              <div class="col-sm">
-                <h5>City/Street</h5>
-                <select name="Locations" id="cars">
-                  <option value="Istanbul">Istanbul</option>
-                  <option value="Ankara">Ankara</option>
-                  <option value="Izmir">Izmir</option>
-                  <option value="Adana">Adana</option>
-                </select>
-              </div>
-              <div class="col-sm">
-                <h5>Property Type</h5>
-                <select name="Property Type" id="cars">
-                  <option value="All Categories">All Categories</option>
-                  <option value="Apartment">
-                    Apartment
-                    <select>
-                      <optgroup label="1">
-                        <option>Nested Option 1</option>
-                        <option>Nested Option 2</option>
-                      </optgroup>
-                    </select>
-                  </option>
-                  <option value="Commercial">Commercial</option>
-                  <option value="Ofices">Ofices</option>
-                  <option value="Garage">Garage</option>
-                </select>
-              </div>
-              <div class="col-sm">
-                <h5>Price range</h5>
-                <select name="Price range" id="cars">
-                  <option value="From 60,000 to 20 cm">
-                    From 60,000 to 20 cm{" "}
-                  </option>
-                  <option value="From 70,000 to 30 cm">
-                    From 70,000 to 30 cm{" "}
-                  </option>
-                  <option value="From 80,000 to 40 cm ">
-                    From 80,000 to 40 cm{" "}
-                  </option>
-                  <option value="From 90,000 to 50 cm">
-                    From 90,000 to 50 cm{" "}
-                  </option>
-                  <option value="From 100,000 to 60 cm">
-                    From 100,000 to 60 cm{" "}
-                  </option>
-                </select>
-              </div>
-              <div class="col-sm">
-                <h5>Bedrooms</h5>
-                <select name="Bedrooms" id="cars">
-                  <option value="1 + 1">1 + 1</option>
-                  <option value="1 + 2">1 + 2</option>
-                  <option value="1 +3">1 +3</option>
-                  <option value="1 + 4">1 + 4</option>
-                </select>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="carousel-item">
-          <img src="pexel3.jpg" alt="New York" class="card-img" />
-          <div class="carousel-caption">
-            <h1 className="head">Search Your Next Home</h1>
-            <h4 className="praghraph">
-              Find new featured property located in your local city
-            </h4>
-          </div>
-          <div class="container">
-            <div class="row">
-              <div class="col-sm">
-                <h5>City/Street</h5>
-                <select name="Locations" id="cars">
-                  <option value="Istanbul">Istanbul</option>
-                  <option value="Ankara">Ankara</option>
-                  <option value="Izmir">Izmir</option>
-                  <option value="Adana">Adana</option>
-                </select>
-              </div>
-              <div class="col-sm">
-                <h5>Property Type</h5>
-                <select name="Property Type" id="cars">
-                  <option value="All Categories">All Categories</option>
-                  <option value="Apartment">
-                    Apartment
-                    <select>
-                      <optgroup label="1">
-                        <option>Nested Option 1</option>
-                        <option>Nested Option 2</option>
-                      </optgroup>
-                    </select>
-                  </option>
-                  <option value="Commercial">Commercial</option>
-                  <option value="Ofices">Ofices</option>
-                  <option value="Garage">Garage</option>
-                </select>
-              </div>
-              <div class="col-sm">
-                <h5>Price range</h5>
-                <select name="Price range" id="cars">
-                  <option value="From 60,000 to 20 cm">
-                    From 60,000 to 20 cm{" "}
-                  </option>
-                  <option value="From 70,000 to 30 cm">
-                    From 70,000 to 30 cm{" "}
-                  </option>
-                  <option value="From 80,000 to 40 cm ">
-                    From 80,000 to 40 cm{" "}
-                  </option>
-                  <option value="From 90,000 to 50 cm">
-                    From 90,000 to 50 cm{" "}
-                  </option>
-                  <option value="From 100,000 to 60 cm">
-                    From 100,000 to 60 cm{" "}
-                  </option>
-                </select>
-              </div>
-              <div class="col-sm">
-                <h5>Bedrooms</h5>
-                <select name="Bedrooms" id="cars">
-                  <option value="1 + 1">1 + 1</option>
-                  <option value="1 + 2">1 + 2</option>
-                  <option value="1 +3">1 +3</option>
-                  <option value="1 + 4">1 + 4</option>
-                </select>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <button
-        class="carousel-control-prev"
-        type="button"
-        data-bs-target="#demo"
-        data-bs-slide="prev"
-        color="blue"
-      >
-        <span class="carousel-control-prev-icon"></span>
-      </button>
-      <button
-        class="carousel-control-next"
-        type="button"
-        data-bs-target="#demo"
-        data-bs-slide="next"
-      >
-        <span class="carousel-control-next-icon"></span>
-      </button>
-    </div>
+<div className="hero">
+<div className="herocontent">
+<div className="headAndPraghrap">
+<h1 className="head">Search Your Next Home</h1>
+ <h4 className="praghraph">
+     Find new featured property located in your local city
+</h4>
+</div>
+<div className="selectcity">
+     <div className="section1">
+      <div id="dropdownDivider" class="hidden z-10 w-44 bg-white rounded divide-y divide-gray-100 shadow dark:bg-gray-700 dark:divide-gray-600">
+    <ul class="py-1 text-sm text-gray-700 dark:text-gray-200" aria-labelledby="dropdownDividerButton">
+      <li>
+        <a href="#" class="block py-2 px-4 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Istanbul</a>
+      </li>
+      <li>
+        <a href="#" class="block py-2 px-4 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Ankara</a>
+      </li>
+      <li>
+        <a href="#" class="block py-2 px-4 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Izmir</a>
+      </li>
+      <li >
+      <a href="#" class="block py-2 px-4 text-sm text-gray-700 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white">Adana</a>
+    </li>
+    </ul>
+</div>
+</div>
+ 
+  <div class='section2'>
+  <label className="label">property Type</label>
+  
+  <div id="dropdownDivider" class="hidden z-10 w-44 bg-white rounded divide-y divide-gray-100 shadow dark:bg-gray-700 dark:divide-gray-600">
+    <ul class="py-1 text-sm text-gray-700 dark:text-gray-200" aria-labelledby="dropdownDividerButton">
+      <li>
+        <a href="#" class="block py-2 px-4 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">All Categories</a>
+      </li>
+      <li>
+        <a href="#" class="block py-2 px-4 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Apartement</a>
+      </li>
+      <li>
+        <a href="#" class="block py-2 px-4 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Villas</a>
+      </li>
+      <li >
+      <a href="#" class="block py-2 px-4 text-sm text-gray-700 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white">Offices</a>
+    </li>
+    <li >
+      <a href="#" class="block py-2 px-4 text-sm text-gray-700 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white">Garage</a>
+    </li>
+    </ul>
+</div>
+  </div>
+  <div>
+ 
+</div>
+  <div class='section2'>
+  <label className="label">city</label>
+  <select className="select">
+    Be
+    <option>1+1</option>
+    <option>1+2</option>
+    <option>1+3</option>
+    <option>1+4</option>
+  </select>
+  </div>
+ <div>
+ <label className="label">city</label>
+ <button id="dropdownUsersButton" data-dropdown-toggle="dropdownUsers" data-dropdown-placement="bottom" class="text-black bg-white hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-4 py-2.5 text-center inline-flex items-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800" type="button">
+  Price Range
+  <svg class="ml-2 w-4 h-4" aria-hidden="true" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg></button>
+
+<div id="dropdownUsers" class="hidden z-10 w-60 bg-white rounded shadow dark:bg-gray-700">
+  <ul class="overflow-y-auto py-1 h-48 text-gray-700 dark:text-gray-200" aria-labelledby="dropdownUsersButton">
+    <li>
+      <a href="#" class="flex items-center py-2 px-4 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">
+        From 40.000 To 10m
+      </a>
+    </li>
+    <li>
+      <a href="#" class="flex items-center py-2 px-4 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">
+   
+      From 60.000 To 20m
+      </a>
+    </li>
+    <li>
+      <a href="#" class="flex items-center py-2 px-4 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">
+
+      From 70.000 To 30m
+      </a>
+    </li>
+    <li>
+      <a href="#" class="flex items-center py-2 px-4 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">
+
+      From 80.000 To 40m
+      </a>
+    </li>
+    <li>
+      <a href="#" class="flex items-center py-2 px-4 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">
+     
+      From 90.000 To 60m
+      </a>
+    </li>
+  </ul> 
+</div>
+ </div>
+  <div class='section5'>
+    <button className='go__btn'>
+      GO!
+    </button>
+  </div>
+</div>
+</div>
+
+ </div>
+
   )
 }
 
